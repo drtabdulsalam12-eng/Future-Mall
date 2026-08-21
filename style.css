@@ -1,0 +1,29 @@
+
+body {
+    background-color: #bed7f7;
+    font-family: Arial, sans-serif;
+    padding: 40px;
+}
+
+h1 {
+    color: #173b8f;
+    font-size: 42px;
+}
+
+h2 {
+    color: #2563eb;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-content {
+    text-align: left;
+}
+
+.content img {
+    width: 250px;
+    height: auto;
+}
