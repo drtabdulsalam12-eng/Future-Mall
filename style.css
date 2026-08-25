@@ -1,54 +1,326 @@
-body {
-    background-color: #bed7f7;
-    font-family: Arial, sans-serif;
-    padding: 40px;
+* {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
+
+body {
+    background: #f4f7fc;
+    font-family: Arial, sans-serif;
+    color: #172554;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
 
 nav {
+    height: 90px;
+    background: white;
+
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    margin-bottom: 20px;
+
+    padding: 0 8%;
+
+    border-bottom: 1px solid #e5eaf3;
 }
 
-nav img {
-    width: 80px;
+
+/* Logo + Name */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
 }
+
+.brand img {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+}
+
+.brand span {
+    font-size: 21px;
+    font-weight: 700;
+    color: #173b8f;
+}
+
+
+/* Navigation Links */
 
 .nav-right {
     display: flex;
-    gap: 20px;
-    padding-top: 10px;
+    align-items: center;
+    gap: 28px;
 }
 
 .nav-right a {
+    text-decoration: none;
     color: #173b8f;
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: 0.2s;
 }
 
-h1 {
-    color: #173b8f;
-    font-size: 42px;
-    margin-top: 0;
-}
-
-h2 {
+.nav-right a:hover {
     color: #2563eb;
 }
 
-.content {
-    display: flex;
+
+/* =========================
+   HERO
+========================= */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 40px 60px;
 }
 
-.text-content {
-    text-align: left;
+.hero {
+    background: linear-gradient(
+        135deg,
+        #dcecff,
+        #eef5ff
+    );
+
+    border-radius: 24px;
+
+    padding: 65px 70px;
+
+    min-height: 280px;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid #d7e5f8;
 }
+
+
+.small-title {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #2563eb;
+}
+
+
+.hero h1 {
+    margin-top: 8px;
+
+    font-size: 52px;
+    line-height: 1.1;
+
+    color: #173b8f;
+}
+
+
+.hero p {
+    max-width: 650px;
+
+    margin-top: 18px;
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    color: #475569;
+}
+
+
+/* =========================
+   STORES
+========================= */
+
+.stores {
+    margin-top: 65px;
+}
+
+
+.section-heading span,
+.connect span {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #2563eb;
+}
+
+
+.section-heading h2 {
+    margin-top: 6px;
+
+    font-size: 30px;
+
+    color: #173b8f;
+}
+
+
+.store-grid {
+    margin-top: 28px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+
+.store-card {
+    background: white;
+
+    padding: 25px;
+
+    min-height: 130px;
+
+    border-radius: 16px;
+
+    border: 1px solid #e2e8f0;
+
+    box-shadow: 0 6px 18px rgba(23, 59, 143, 0.06);
+
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+.store-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 12px 25px rgba(23, 59, 143, 0.12);
+}
+
+
+.store-card h3 {
+    font-size: 18px;
+
+    color: #173b8f;
+}
+
+
+.store-card p {
+    margin-top: 10px;
+
+    font-size: 14px;
+
+    color: #64748b;
+}
+
+
+/* =========================
+   CONNECT
+========================= */
 
 .connect {
-    margin-top: 30px;
+    background: #173b8f;
+
+    color: white;
+
+    padding: 35px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+
+.connect h2 {
+    margin-top: 5px;
+
+    color: white;
+
+    font-size: 28px;
+}
+
+
+.connect span {
+    color: #b9d5ff;
+}
+
+
 .connect button {
-    padding: 10px 20px;
+    border: none;
+
+    background: white;
+
+    color: #173b8f;
+
+    padding: 12px 24px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.connect button:hover {
+    background: #e8f1ff;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    nav {
+        padding: 0 5%;
+    }
+
+    main {
+        padding: 40px 20px;
+    }
+
+    .hero {
+        padding: 45px 35px;
+    }
+
+    .store-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    nav {
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .brand span {
+        display: none;
+    }
+
+    .nav-right {
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero {
+        padding: 40px 25px;
+    }
+
+    .store-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .connect {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
 }
