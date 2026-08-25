@@ -1,22 +1,16 @@
-
 body {
     background-color: #bed7f7;
     font-family: Arial, sans-serif;
     padding: 40px;
+    margin: 0;
 }
 
-h1 {
-    color: #173b8f;
-    font-size: 42px;
-}
-
-h2 {
-    color: #2563eb;
-}
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 nav img {
@@ -26,14 +20,21 @@ nav img {
 .nav-right {
     display: flex;
     gap: 20px;
+    padding-top: 10px;
 }
 
-.connect {
-    margin-top: 30px;
+.nav-right a {
+    color: #173b8f;
 }
 
-.connect button {
-    padding: 10px 20px;
+h1 {
+    color: #173b8f;
+    font-size: 42px;
+    margin-top: 0;
+}
+
+h2 {
+    color: #2563eb;
 }
 
 .content {
@@ -42,4 +43,12 @@ nav img {
 
 .text-content {
     text-align: left;
+}
+
+.connect {
+    margin-top: 30px;
+}
+
+.connect button {
+    padding: 10px 20px;
 }
