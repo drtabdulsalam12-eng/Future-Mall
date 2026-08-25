@@ -1,294 +1,193 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 body {
-    background: #f4f7fc;
+    margin: 0;
+    padding: 0;
+
+    background-color: #f4f7fc;
+    color: #333333;
+
     font-family: Arial, sans-serif;
-    color: #172554;
+    font-size: 16px;
+    line-height: 1.6;
 }
+
+
 
 nav {
-    height: 90px;
-    background: white;
+    background-color: white;
 
     display: flex;
-    align-items: center;
     justify-content: space-between;
-
-    padding: 0 8%;
-
-    border-bottom: 1px solid #e5eaf3;
-}
-
-.brand {
-    display: flex;
     align-items: center;
-    gap: 14px;
+
+    padding: 20px 8%;
+
+    border-bottom: 2px solid #dbe7f5;
 }
 
 .brand img {
-    width: 58px;
-    height: 58px;
-    object-fit: contain;
-}
-
-.brand span {
-    font-size: 21px;
-    font-weight: 700;
-    color: #173b8f;
+    width: 75px;
 }
 
 .nav-right {
     display: flex;
-    align-items: center;
-    gap: 28px;
+    gap: 25px;
 }
 
 .nav-right a {
-    text-decoration: none;
     color: #173b8f;
-    font-size: 15px;
-    font-weight: 600;
 
-    transition: 0.2s;
+    font-size: 16px;
+    font-weight: bold;
+
+    text-decoration: none;
 }
 
 .nav-right a:hover {
     color: #2563eb;
+    text-decoration: underline;
 }
+
 
 main {
-    max-width: 1100px;
-    margin: auto;
-    padding: 70px 40px 60px;
+    padding: 55px 8%;
 }
+
 
 .hero {
-    background: linear-gradient(
-        135deg,
-        #dcecff,
-        #eef5ff
-    );
+    background-color: #dcecff;
 
-    border-radius: 24px;
+    padding: 50px;
 
-    padding: 65px 70px;
+    text-align: left;
 
-    min-height: 280px;
-
-    display: flex;
-    align-items: center;
-
-    border: 1px solid #d7e5f8;
+    border: 1px solid #c7dcf5;
 }
-
 
 .small-title {
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 2px;
     color: #2563eb;
-}
 
+    font-size: 14px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
 
 .hero h1 {
-    margin-top: 8px;
-
-    font-size: 52px;
-    line-height: 1.1;
-
     color: #173b8f;
-}
 
+    font-size: 48px;
+    font-weight: bold;
+
+    margin: 10px 0;
+}
 
 .hero p {
-    max-width: 650px;
+    color: #555555;
 
-    margin-top: 18px;
-
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.7;
 
-    color: #475569;
+    max-width: 650px;
 }
+
 .stores {
-    margin-top: 65px;
+    margin-top: 55px;
 }
 
-
-.section-heading span,
-.connect span {
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 2px;
+.section-heading span {
     color: #2563eb;
-}
 
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
 
 .section-heading h2 {
-    margin-top: 6px;
+    color: #173b8f;
 
     font-size: 30px;
+    font-weight: bold;
 
-    color: #173b8f;
+    margin-top: 5px;
 }
-
 
 .store-grid {
-    margin-top: 28px;
-
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
 
     gap: 18px;
+
+    margin-top: 25px;
 }
 
-
 .store-card {
-    background: white;
+    background-color: white;
+
+    width: 30%;
 
     padding: 25px;
 
-    min-height: 130px;
-
-    border-radius: 16px;
-
-    border: 1px solid #e2e8f0;
-
-    box-shadow: 0 6px 18px rgba(23, 59, 143, 0.06);
-
-    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #dbe7f5;
 }
-
-
-.store-card:hover {
-    transform: translateY(-4px);
-
-    box-shadow: 0 12px 25px rgba(23, 59, 143, 0.12);
-}
-
 
 .store-card h3 {
-    font-size: 18px;
-
     color: #173b8f;
-}
 
+    font-size: 18px;
+    font-weight: bold;
 
-.store-card p {
-    margin-top: 10px;
-
-    font-size: 14px;
-
-    color: #64748b;
+    text-align: center;
 }
 
 .connect {
-    background: #173b8f;
+    background-color: #173b8f;
 
     color: white;
 
-    padding: 35px 8%;
+    padding: 30px 8%;
 
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
+.connect span {
+    color: #bed7f7;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
 
 .connect h2 {
-    margin-top: 5px;
-
     color: white;
 
     font-size: 28px;
+    font-weight: bold;
+
+    margin: 5px 0;
 }
-
-
-.connect span {
-    color: #b9d5ff;
-}
-
 
 .connect button {
-    border: none;
-
-    background: white;
-
+    background-color: white;
     color: #173b8f;
 
-    padding: 12px 24px;
+    padding: 12px 25px;
 
-    border-radius: 8px;
+    border: none;
 
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 15px;
+    font-weight: bold;
 
     cursor: pointer;
-
-    transition: 0.2s;
 }
-
 
 .connect button:hover {
-    background: #e8f1ff;
-}
-
-@media (max-width: 800px) {
-
-    nav {
-        padding: 0 5%;
-    }
-
-    main {
-        padding: 40px 20px;
-    }
-
-    .hero {
-        padding: 45px 35px;
-    }
-
-    .store-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-
-@media (max-width: 550px) {
-
-    nav {
-        height: auto;
-        padding: 20px;
-        gap: 20px;
-    }
-
-    .brand span {
-        display: none;
-    }
-
-    .nav-right {
-        gap: 15px;
-    }
-
-    .hero h1 {
-        font-size: 40px;
-    }
-
-    .hero {
-        padding: 40px 25px;
-    }
-
-    .store-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .connect {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-    }
+    background-color: #dcecff;
 }
