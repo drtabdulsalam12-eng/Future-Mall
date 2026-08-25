@@ -13,10 +13,27 @@ h1 {
 h2 {
     color: #2563eb;
 }
-.logo {
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
     width: 80px;
-    display: block;
-    margin-bottom: 20px;
+}
+
+.nav-right {
+    display: flex;
+    gap: 20px;
+}
+
+.connect {
+    margin-top: 30px;
+}
+
+.connect button {
+    padding: 10px 20px;
 }
 
 .content {
