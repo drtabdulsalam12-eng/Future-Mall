@@ -10,11 +10,6 @@ body {
     color: #172554;
 }
 
-
-/* =========================
-   NAVIGATION
-========================= */
-
 nav {
     height: 90px;
     background: white;
@@ -27,9 +22,6 @@ nav {
 
     border-bottom: 1px solid #e5eaf3;
 }
-
-
-/* Logo + Name */
 
 .brand {
     display: flex;
@@ -49,9 +41,6 @@ nav {
     color: #173b8f;
 }
 
-
-/* Navigation Links */
-
 .nav-right {
     display: flex;
     align-items: center;
@@ -70,11 +59,6 @@ nav {
 .nav-right a:hover {
     color: #2563eb;
 }
-
-
-/* =========================
-   HERO
-========================= */
 
 main {
     max-width: 1100px;
@@ -130,12 +114,6 @@ main {
 
     color: #475569;
 }
-
-
-/* =========================
-   STORES
-========================= */
-
 .stores {
     margin-top: 65px;
 }
@@ -209,11 +187,6 @@ main {
     color: #64748b;
 }
 
-
-/* =========================
-   CONNECT
-========================= */
-
 .connect {
     background: #173b8f;
 
@@ -264,11 +237,6 @@ main {
 .connect button:hover {
     background: #e8f1ff;
 }
-
-
-/* =========================
-   RESPONSIVE
-========================= */
 
 @media (max-width: 800px) {
 
